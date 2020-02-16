@@ -1,0 +1,17 @@
+
+The program will start when we run "Main.java".
+
+1. In Main.java we have created three different kinds of cards: a Bronze Card, a Silver Card and a Gold Card. We test them with some
+sample data. To perform a transaction and print the data of that transaction on the console, we have created a method called 'printData' 
+in the 'PayDesk' class, where we pass it two arguments - the price of the item and the card.
+
+2. We have created a class named 'Card', which has three fields and a constructor that sets their values and sets the inital 
+discount rate to a zero. In this class there is also a method called 'getDiscountRate', which returns the discount rate stored on the card.
+We also have an abstract method called 'setDiscountRate',which we need in every child class, since the process is different for every card type.
+
+3. The subclasses 'BronzeCard', 'SilverCard' and 'GoldCard' contain the parent constructor and a 'setDiscountRate' method, the logic
+of which depends on the type of card.
+
+4. The 'PayDesk' class is responsible for processing a transaction and printing its details.
+It contains only one method 'printData', which is a static method, meaning the class does 
+not have to be instantiated for this method to be used. The method prints four pieces of information while also formatting the result.
